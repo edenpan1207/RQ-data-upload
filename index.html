@@ -7,19 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/process.css">
 </head>
 
 <body>
     <div class="wrap">
         <section class="upload-qone">
-            <h1>您有運動錶嗎？</h1>
-            <button type="submit" class="btn-yes"><a href="">有</a></button>
-            <button type="submit" class="btn-no"><a href="">無</a></button>
+            <div class="wow bounceInUp">
+                <h1>您有運動錶嗎？</h1>
+            </div>
+            <div class="wow fadeIn">
+                <button type="submit" class="btn-yes"><a href="https://edenpan1207.github.io/RQ-data-upload/garmin.html">有</a></button>
+                <button type="submit" class="btn-no"><a href="https://edenpan1207.github.io/RQ-data-upload/mapmyrun.html">無</a></button>
+            </div>
         </section>
     </div>
     <script src="js/jquery-3.1.0.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/wow.js"></script>
     <script src="js/process.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 </body>
+
 </html>
