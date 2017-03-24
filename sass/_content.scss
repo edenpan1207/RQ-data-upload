@@ -44,37 +44,41 @@ section {
         }
     }
     .btn-yes {
-        @include btn-style margin-right: 30px;
+        @include btn-style 
+        margin-right: 30px;
+        text-decoration: none;
+        font-size: 36px;
+        background: linear-gradient(#b6b6b6,#8e8e8e);
+        color: $rqcolor;
         &:hover {
             @include btn-hover
+        }
+        &:active {
+            transform: translateY(5px); 
+            box-shadow: 0 0 8px #232323;
         }
         @include l-phone {
             padding: 5px 45px;
             margin-right: 10px;
-        }
-        a {
-            text-decoration: none;
-            font-size: 36px;
-            color: $rqcolor;
-            @include l-phone {
-                font-size: 24px;
-            }
+            font-size: 24px;
         }
     }
     .btn-no {
-        @include btn-style &:hover {
+        @include btn-style 
+        text-decoration: none;
+        font-size: 36px;
+        background: linear-gradient(#b6b6b6,#8e8e8e);
+        color: $rqcolor;
+        &:hover {
             @include btn-hover
+        }
+        &:active {
+            transform: translateY(5px); 
+            box-shadow: 0 0 8px #232323;
         }
         @include l-phone {
             padding: 5px 45px;
-        }
-        a {
-            text-decoration: none;
-            font-size: 36px;
-            color: $rqcolor;
-            @include l-phone {
-                font-size: 24px;
-            }
+            font-size: 24px;
         }
     }
 }
