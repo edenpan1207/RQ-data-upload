@@ -1,0 +1,13 @@
+$rqcolor: #37761D;
+
+@mixin btn-style {
+    padding: 10px 60px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+}
+
+@mixin btn-hover {
+    border: 1px solid #a2a2a2;
+    background-color: #a2a2a2;
+    transition: all 0.5s;
+}
